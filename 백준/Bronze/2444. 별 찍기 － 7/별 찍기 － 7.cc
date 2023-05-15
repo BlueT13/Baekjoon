@@ -13,12 +13,7 @@ int main(void)
 			cout << " ";
 		}
 
-		for (int k = 1; k <= i; k++)
-		{
-			cout << "*";
-		}
-
-		for (int l = 1; l <= i - 1; l++)
+		for (int k = 1; k <= 2 * i - 1; k++)
 		{
 			cout << "*";
 		}
@@ -28,17 +23,12 @@ int main(void)
 
 	for (int i = 1; i <= n - 1; i++)
 	{
-		for (int j = n; j > n - i; j--)
+		for (int j = 1; j <= i; j++)
 		{
 			cout << " ";
 		}
 
-		for (int k = n; k > i; k--)
-		{
-			cout << "*";
-		}
-
-		for (int l = n; l > i + 1; l--)
+		for (int k = 1; k <= 2 * (n - i) - 1; k++)
 		{
 			cout << "*";
 		}
