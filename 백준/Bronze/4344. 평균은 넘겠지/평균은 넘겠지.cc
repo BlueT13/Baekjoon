@@ -1,35 +1,34 @@
 #include <iostream>
 using namespace std;
 
-int main(void)
+int main()
 {
-	int c, n, num;
-	int avg;
-	int score[1000] = { 0 };
-	double result;
-
+	int c;
 	cin >> c;
 	for (int i = 0; i < c; i++)
 	{
-		avg = 0;
-		num = 0;
+		int n;
 		cin >> n;
-
+		int* array = new int[n];
+		int sum = 0;
 		for (int j = 0; j < n; j++)
 		{
-			cin >> score[j];
-			avg = avg + score[j];
+			cin >> array[j];
+			sum += array[j];
 		}
-		avg = avg / n;
+
+		int average = sum / n;
+		int count = 0;
 		for (int j = 0; j < n; j++)
 		{
-			if (score[j] > avg)
-				num++;
+			if (array[j] > average)
+			{
+				count++;
+			}
 		}
-		result = (double)num / n * 100;
-
 		cout << fixed;
 		cout.precision(3);
-		cout << result << "%" << endl;
+		cout << (double)count / n * 100 << "%" << endl;
+		delete[] array;
 	}
 }
