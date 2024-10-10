@@ -1,15 +1,13 @@
 #include <iostream>
-using namespace std;
+
+int plusFunc(int a, int b)
+{
+    return a+b;
+}
 
 int main()
 {
-    int A;
-    int B;
-    
-    cin >> A;
-    cin >> B;
-    
-    cout << A+B;
-    
-    return 0;
+    int A,B;
+    std::cin >> A >> B;
+    std::cout << plusFunc(A,B);
 }
