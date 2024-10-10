@@ -1,17 +1,10 @@
 #include <iostream>
-using namespace std;
 
 int main()
 {
-    double A;
-    double B;
-    
-    cin >> A;
-    cin >> B;
-    
-    cout << fixed;
-    cout.precision(9);
-    cout << A/B;
-    
-    return 0;
+	double A, B;
+	std::cin >> A >> B;
+	std::cout.precision(9);
+
+	std::cout << std::fixed << A / B;
 }
