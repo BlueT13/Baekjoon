@@ -1,11 +1,8 @@
 #include <iostream>
-using namespace std;
 
 int main()
 {
-    string id;
-    cin >> id;
-    cout << id + "??!";
-    
-    return 0;
+    std::string id;
+    std::cin >> id;
+    std::cout << id << "??!";
 }
